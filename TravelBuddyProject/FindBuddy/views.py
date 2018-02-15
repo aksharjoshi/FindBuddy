@@ -7,7 +7,7 @@ from django.shortcuts import render
 
 
 def signin(request):
-    return render(request, 'FindBuddy/home.html')
+    return render(request, 'FindBuddy/signin.html')
 
 def signup(request):
     return render(request, 'FindBuddy/basic.html', {'content':['If you would like to contact me, please email me','akshar.joshi91@gmail.com']})
