@@ -8,3 +8,5 @@ from models import Traveller
 
 
 admin.site.register(Traveller)
+
+

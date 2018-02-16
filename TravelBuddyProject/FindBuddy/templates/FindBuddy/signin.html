@@ -74,6 +74,7 @@
                         </div>                     
                     </div>  
         </div>
+        <form action="signup" method="POST">
         <div id="signupbox" style="display:none; margin-top:50px" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
                     <div class="panel panel-info">
                         <div class="panel-heading">
@@ -93,26 +94,34 @@
                                 <div class="form-group">
                                     <label for="email" class="col-md-3 control-label">Email</label>
                                     <div class="col-md-9">
-                                        <input type="text" class="form-control" name="email" placeholder="Email Address">
+                                        <input id="email" type="text" class="form-control" name="email" placeholder="Email Address">
                                     </div>
                                 </div>
                                     
                                 <div class="form-group">
                                     <label for="firstname" class="col-md-3 control-label">First Name</label>
                                     <div class="col-md-9">
-                                        <input type="text" class="form-control" name="firstname" placeholder="First Name">
+                                        <input id="firstname" type="text" class="form-control" name="firstname" placeholder="First Name">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="lastname" class="col-md-3 control-label">Last Name</label>
                                     <div class="col-md-9">
-                                        <input type="text" class="form-control" name="lastname" placeholder="Last Name">
+                                        <input id="lastname" type="text" class="form-control" name="lastname" placeholder="Last Name">
                                     </div>
                                 </div>
+
                                 <div class="form-group">
                                     <label for="password" class="col-md-3 control-label">Password</label>
                                     <div class="col-md-9">
-                                        <input type="password" class="form-control" name="passwd" placeholder="Password">
+                                        <input id="password" type="password" class="form-control" name="passwd" placeholder="Password">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="number" class="col-md-3 control-label">Number</label>
+                                    <div class="col-md-9">
+                                        <input id="number" type="text" class="form-control" name="number" placeholder="Phone number">
                                     </div>
                                 </div>
                                     
@@ -120,23 +129,23 @@
                                     <label for="icode" class="col-md-3 control-label">Detination country</label>
                                     <div class="col-md-9">
                                         <!--<select class="input-medium bfh-countries" data-country="US"></select>-->
-                                        <input type="text" class="form-control" name="dcountry" placeholder="Destination country">
+                                        <input id="icode" type="text" class="form-control" name="icode" placeholder="Destination country">
                                     </div>
                                 </div>
 
 
                                 <div class="form-group">
-                                    <label for="icode" class="col-md-3 control-label">Start Date</label>
+                                    <label for="sdate" class="col-md-3 control-label">Start Date</label>
                                     <div class="col-md-9">
-                                        <input type="date" class="form-control" name="sdate" placeholder="">
+                                        <input id="sdate" type="date" class="form-control" name="sdate" placeholder="">
                                     </div>
                                 </div>
 
 
                                 <div class="form-group">
-                                    <label for="icode" class="col-md-3 control-label">End Date</label>
+                                    <label for="edate" class="col-md-3 control-label">End Date</label>
                                     <div class="col-md-9">
-                                        <input type="date" class="form-control" name="edate" placeholder="">
+                                        <input id="edate" type="date" class="form-control" name="edate" placeholder="">
                                     </div>
                                 </div>
 
@@ -144,10 +153,12 @@
                                 <div class="form-group">
                                     <!-- Button -->                                        
                                     <div class="col-md-offset-3 col-md-9">
-                                        <button id="btn-signup" type="button" class="btn btn-info"><i class="icon-hand-right"></i> &nbsp Sign Up</button>
-                                        <span style="margin-left:8px;">or</span>  
+                                        <input type="submit" name="signup" value="Sign Up">
+                                        <!-- <button id="btn-signup" type="button" class="btn btn-info"><i class="icon-hand-right"></i> &nbsp Sign Up</button>
+                                        <span style="margin-left:8px;">or</span>  --> 
                                     </div>
                                 </div>
+                            </form>
                                 
                                 <div style="border-top: 1px solid #999; padding-top:20px"  class="form-group">
                                     
